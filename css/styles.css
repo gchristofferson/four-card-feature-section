@@ -175,13 +175,14 @@ GENERAL LAYOUT
     .main {
         display: grid;
         grid-template-columns: repeat(3, 350px);
-        grid-template-rows: repeat(2, 91px) repeat(4, 125px);
+        grid-template-rows: repeat(2, 91px) repeat(4, 110px);
         padding: 80px 165px;
         gap: 30px;
         margin: 0 auto;
     }
     .card {
         max-width: 350px;
+        max-height: 250px;
     }
 
     .section-info {
