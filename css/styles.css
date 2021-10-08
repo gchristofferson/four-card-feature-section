@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ============================
+COLORS
+============================ */
+
+:root {
+
+    /* --- Primary --- */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* --- Neutral --- */
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-blue: hsl(0, 0%, 98%);
+}
+
+/* ============================
+TYPOGRAPHY
+============================ */
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--very-dark-blue);
+}
+
+.overline,
+h1 {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.17px;
+}
+
+.overline {
+    font-weight: 200;
+    opacity: 1;
+
+}
+
+h1,
+h2 {
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+p {
+    opacity: 0.5;
+}
+
+.card__text {
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.09px;
+}
+
+/* ============================
+GENERAL LAYOUT
+============================ */
+
+.body {
+    background-color: var(--very-light-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 85px 32px 78px 32px;
+}
+
+.section-info {
+    text-align: center;
+    margin-bottom: 76px;
+    width: 100%;
+}
+
+.section-info__title {
+    margin-bottom: 10px;
+}
+
+.section-info__text {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 311px;
+    min-height: 222px;
+    padding: 28px;
+    box-shadow: 0 15px 30px -11px
+        rgba(131, 166, 210, 0.5);
+}
+
+.card::before {
+    content: "";
+    height: 3px;
+    margin: 0 -28px;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    top: -28px;
+}
+
+.card--1::before {
+    background-color: var(--cyan);
+}
+
+.card--2::before {
+    background-color: var(--red);
+}
+
+.card--3::before {
+    background-color: var(--orange);
+}
+
+.card--4::before {
+    background-color: var(--blue);
+}
+
+.card__text {
+    margin-bottom: 33px;
+}
+
+.card__icon {
+    width: 57px;
+    align-self: flex-end;
+}
+
+@media (min-width: 1045px) {
+
+}
+
+
+
+
+
