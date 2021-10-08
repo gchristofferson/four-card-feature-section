@@ -125,8 +125,17 @@ GENERAL LAYOUT
     max-width: 311px;
     min-height: 222px;
     padding: 28px;
+    overflow: hidden;
     box-shadow: 0 15px 30px -11px
         rgba(131, 166, 210, 0.5);
+}
+
+.card::before {
+    content: "";
+    height: 4px;
+    margin: 0 -26px;
+    position: relative;
+    top: -28px;
 }
 
 .card::before {
