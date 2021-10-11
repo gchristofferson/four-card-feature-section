@@ -124,7 +124,9 @@ GENERAL LAYOUT
     border-radius: 8px;
     max-width: 311px;
     min-height: 222px;
-    padding: 28px;
+    /* must adjust .card::before negative
+    margin-top to match padding top here */
+    padding: 28px 33px 33px 33px;
     overflow: hidden;
     box-shadow: 0 15px 30px -11px
         rgba(131, 166, 210, 0.5);
@@ -133,7 +135,7 @@ GENERAL LAYOUT
 .card::before {
     content: "";
     height: 4px;
-    margin: 0 -30px;
+    margin: 0 -50px;
     position: relative;
     top: -28px;
 }
@@ -159,8 +161,9 @@ GENERAL LAYOUT
 }
 
 .card__icon {
-    width: 57px;
+    width: 62px;
     align-self: flex-end;
+    margin-top: auto;
 }
 
 @media (min-width: 1045px) {
